@@ -17,6 +17,7 @@ const courseDistances = {
     Belmont: 3,
     Woburn: 3,
     "Catholic Memorial": 3.1
+
 };
 
 fetch('league-meet.csv')
