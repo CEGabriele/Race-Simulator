@@ -1,4 +1,21 @@
 const table = document.getElementById('leagueMeetTable');
+const scoreTable = document.getElementById('teamScoresTable');
+let rawData = [];
+const courseDistances = {
+    McClennan: 3.1,
+    Winchester: 3.0,
+    Wilmington: 3.1,
+    Twilight: 3.0,
+    Baystate: 3.1,
+    Burlington: 3.05,
+    Stoneham: 3.1,
+    Watertown: 3.1,
+    Lexington: 3.1,
+    Devens: 3.1,
+    Melrose: 3.1,
+    Reading: 3.1,
+};
+
 fetch('league-meet.csv')
     .then(response => {
         if (!response.ok) {
@@ -8,11 +25,13 @@ fetch('league-meet.csv')
     })
     .then(csvText => {
         const results = Papa.parse(csvText, { header: false });
-        const data = results.data;
-        const dataWithPace = addPaceColumn(data);
+        rawData = results.data;
+        const dataWithPace = addPaceColumn(rawData);
         const sortedData = sortByPace(dataWithPace);
         const finalData = addPointsColumn(sortedData);
         generateTable(finalData);
+        generateScoreTable(calculateTeamScores(finalData));
+        generateCourseDistanceForms();
     })
     .catch(error => {
         table.innerHTML = `<tr><td colspan="5">Error loading data: ${error.message}</td></tr>`;
@@ -61,21 +80,6 @@ function sortByPace(data){
 }
 
 function addPaceColumn(data){
-    const courseDistances = {
-        McClennan: 3.1,
-        Winchester: 3.0,
-        Wilmington: 3.1,
-        Twilight: 3.0,
-        Baystate: 3.1,
-        Burlington: 3.05,
-        Stoneham: 3.1,
-        Watertown: 3.1,
-        Lexington: 3.1,
-        Devens: 3.1,
-        Melrose: 3.1,
-        Reading: 3.1,
-
-    };
 
     const header =[...data[0]];
     header.splice(2, 0, 'Pace (min/mile)');
@@ -123,18 +127,78 @@ function calculateTeamScores(data){
     const teamScores = {};
     const rows = data.slice(1);
     rows.forEach((row, index) => {
-        if (!teamScores[team].length < 5){
+        const team = row[4];
+        const points = Number(row[0]);
+        if (!teamScores[team]) {
+            teamScores[team] = [];
+        }
+        if (teamScores[team].length < 5){
             teamScores[team].push(points);
         }
-        
     });
-    
-    const teamTotals = Objects.entries(teamScores).map(([team, points]) => {
+    const teamTotals = Object.entries(teamScores).map(([team, points]) => {
         const total = points.reduce((sum, p) => sum + p, 0);
         return { team, total, runners:points };
     });
-
     teamTotals.sort((a, b) => a.total - b.total);
 
     return teamTotals;
+}
+
+function generateScoreTable(data){
+    scoreTable.innerHTML = '';
+    const headerRow = scoreTable.insertRow();
+    data.header = ['Team', 'Total Points', 'Individual Points'];
+    data.header.forEach(headerText => {
+        const th = document.createElement('th');
+        th.textContent = headerText;
+        headerRow.appendChild(th);
+    });
+
+    data.forEach(teamData => {
+        const row = scoreTable.insertRow();
+        const teamCell = row.insertCell();
+        teamCell.textContent = teamData.team;
+
+        const totalCell = row.insertCell();
+        totalCell.textContent = teamData.total;
+
+        const runnersCell = row.insertCell();
+        runnersCell.textContent = teamData.runners.join(', ');
+    });
+    //change color based on team
+    for (let i = 1; i < scoreTable.rows.length; i++) {
+        const teamName = scoreTable.rows[i].cells[0].textContent;
+        scoreTable.rows[i].classList.add(`team-${teamName.toLowerCase()}`);
+    }
+}
+
+function generateCourseDistanceForms(){
+    const container = document.getElementById('courseFormsContainer');
+    container.innerHTML = '';
+    const sortedCourses = Object.keys(courseDistances).sort();
+    sortedCourses.forEach(course => {
+        const formDiv = document.createElement('div');
+        formDiv.classList.add('input-group', 'mb-2');
+        formDiv.innerHTML = `
+            <span class="input-group-text">${course}</span>
+            <input type="number" step="0.01" min = "0.1" class="form-control" id="distance-${course}" value="${courseDistances[course]}">
+        `;
+        container.appendChild(formDiv);
+    });
+
+    sortedCourses.forEach(course => {
+        const input = document.getElementById(`distance-${course}`);
+        input.addEventListener('input', (e) => {
+            const input = document.getElementById(`distance-${course}`);
+            const newDistance = parseFloat(input.value);
+            
+            courseDistances[course] = newDistance;
+            const updatedPaceData = addPaceColumn(rawData)
+            const sortedData = sortByPace(updatedPaceData);
+            const finalData = addPointsColumn(sortedData);
+            generateTable(finalData);
+            generateScoreTable(calculateTeamScores(finalData));
+        });
+    });
 }
