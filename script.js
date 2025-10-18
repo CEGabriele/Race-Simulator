@@ -3,7 +3,7 @@ const scoreTable = document.getElementById('teamScoresTable');
 let rawData = [];
 const courseDistances = {
     McClennan: 3.1,
-    Winchester: 3.0,
+    Winchester: 3.08,
     Wilmington: 3.1,
     Twilight: 3.0,
     Baystate: 3.1,
