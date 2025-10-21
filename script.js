@@ -5,7 +5,7 @@ const courseDistances = {
     McClennan: 3.1,
     Winchester: 3.08,
     Wilmington: 3.1,
-    Twilight: 3.0,
+    Twilight: 3.06,
     Baystate: 3.1,
     Burlington: 3.05,
     Stoneham: 3.1,
