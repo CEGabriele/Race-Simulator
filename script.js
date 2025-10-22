@@ -119,8 +119,13 @@ function convertHmsToSeconds(hmsString) {
 }
 
 function convertSecondsToPace(seconds) {
-    const minutes = Math.floor(seconds / 60);
-    const secs = Math.round(seconds % 60);
+    let minutes = Math.floor(seconds / 60);
+    let secs = Math.round(seconds % 60);
+
+    if (secs === 60) {
+        minutes += 1;
+        secs = 0;
+    }
     if (minutes >= 10){
         return `00:${minutes}:${secs.toString().padStart(2, '0')}`;
     }
