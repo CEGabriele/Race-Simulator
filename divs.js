@@ -236,3 +236,14 @@ function generateCourseDistanceForms(){
 function slugifyTeamName(name) {
     return name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('toggleCourseFormBtn');
+    const formContainer = document.getElementById('courseFormsContainer');
+    let isVisible = false;
+
+    toggleBtn.addEventListener('click', () => {
+        isVisible = !isVisible;
+        formContainer.style.display = isVisible ? 'block' : 'none';
+        toggleBtn.textContent = isVisible ? 'Hide Course Distance Editor' : 'Show Course Distance Editor';
+    });
+});
