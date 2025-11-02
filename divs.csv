@@ -1,18 +1,4 @@
 Name,Time,Team,Course
-Maria Chopas,0:18:30,Concord Carlisle,Twilight
-Emma Kjaersgaard,0:19:07,Concord Carlisle,Dual County Leagues
-Pelin Turner,0:19:14,Concord Carlisle,Twilight
-Alex Skelly,0:19:37,Concord Carlisle,Twilight
-Felicity Daglish,0:19:38,Concord Carlisle,Dual County Leagues
-Liliana Miles,0:20:09,Concord Carlisle,Dual County Leagues
-Abigail Adams,0:20:48,Concord Carlisle,Dual County Leagues
-Chloe Reinelt,0:19:18,Arlington,Woburn
-Sofia Faust,0:20:24,Arlington,McClennan
-Caroline Herr,0:19:42,Arlington,Woburn
-Claire Gabriele,0:20:11,Arlington,Woburn
-Nora Chan,0:20:12,Arlington,Woburn
-Katelynn Ball,0:20:45,Arlington,Woburn
-Anne Marie Spilker,0:20:21,Arlington,Woburn
 Kyra Brossi,0:19:25,Algonquin,Twilight
 Sabrina Brossi,0:20:17,Algonquin,Twilight
 Tanvi Mehta,0:20:20,Algonquin,Twilight
@@ -20,6 +6,13 @@ Abigail Clarke,0:20:48,Algonquin,Twilight
 Josephine Gugger,0:21:03,Algonquin,Twilight
 Isabella Gaskamp,0:22:29,Algonquin,Twilight
 Alaia Phillips,0:23:06,Algonquin,Twilight
+Chloe Reinelt,0:19:18,Arlington,Woburn
+Sofia Faust,0:20:24,Arlington,McClennan
+Caroline Herr,0:19:42,Arlington,Woburn
+Claire Gabriele,0:20:11,Arlington,Woburn
+Nora Chan,0:20:12,Arlington,Woburn
+Katelynn Ball,0:20:21,Arlington,Woburn
+Anne Marie Spilker,0:20:21,Arlington,Woburn
 Makenna Dennis,0:22:11,Barnstable,Old Colony Leagues
 Grace Wilson,0:22:55,Barnstable,Falmouth
 Molly Britton,0:24:20,Barnstable,Old Colony Leagues
@@ -34,20 +27,6 @@ Daphne Lee,0:22:04,Belmont,Reading
 Lila Son,0:22:06,Belmont,Reading
 Brynn Franklin,0:22:14,Belmont,Reading
 Ruth Siegert,0:21:29,Belmont,Belmont
-Caroline Lanz,0:19:01,Winchester,Winchester
-Riley Newman,0:19:03,Winchester,Winchester
-Julia Ramsey,0:19:12,Winchester,Winchester
-Chloe Chan,0:19:22,Winchester,Winchester
-Michelle Su,0:19:51,Winchester,Winchester
-Millie McDonald,0:19:55,Winchester,Devens
-Eloise Woelk,0:20:02,Winchester,Winchester
-Carla Bosso,0:20:00,Woburn,Woburn
-Zoe Faiano,0:19:59,Woburn,Woburn
-Elina Hunt,0:20:26,Woburn,Woburn
-Molly Loughlin,0:22:08,Woburn,Woburn
-Caitlin Castoldi,0:23:57,Woburn,Baystate
-Alexis Lohnes,0:24:34,Woburn,Winchester
-Maggie Campbell,0:22:52,Woburn,Woburn
 Grace Corbett,0:19:50,Beverly,Catholic Memorial
 Claire Healey,0:22:56,Beverly,Catholic Memorial
 Chloe Bossler,0:23:06,Beverly,Catholic Memorial
@@ -66,6 +45,13 @@ Lucy Labrecque,0:21:36,Chelmsford,Twilight
 Maile de Leon,0:22:20,Chelmsford,Twilight
 Chloe Mereves,0:23:01,Chelmsford,Twilight
 Marley Sutliff,0:23:35,Chelmsford,Twilight
+Maria Chopas,0:18:30,Concord Carlisle,Twilight
+Emma Kjaersgaard,0:19:07,Concord Carlisle,Dual County Leagues
+Pelin Turner,0:19:14,Concord Carlisle,Twilight
+Alex Skelly,0:19:37,Concord Carlisle,Twilight
+Felicity Daglish,0:19:38,Concord Carlisle,Dual County Leagues
+Liliana Miles,0:20:09,Concord Carlisle,Dual County Leagues
+Abigail Adams,0:20:48,Concord Carlisle,Dual County Leagues
 Aydalee Dubreuil,0:24:01,Diman,Diman
 Aubrey DeFaria,0:24:52,Diman,Diman
 Finley Lyman,0:25:53,Diman,Diman
@@ -103,13 +89,13 @@ Nisha Prabhu,0:21:35,Marshfield,Patriot Leagues
 Diya Prabhu,0:22:14,Marshfield,Patriot Leagues
 Elle Ablondi,0:22:14,Marshfield,Patriot Leagues
 Sydney Smolcha,0:22:19,Marshfield,Bay State
-Megan Joyce,0:19:41,Natick,Newton
-Kailie Rader,0:20:00,Natick,Newton
-Samantha McMorrow,0:20:04,Natick,Newton
-Margaret Armstrong,0:20:05,Natick,Newton
-Erin Wagner,0:20:57,Natick,Twilight
-Lydia Beaudoin,0:21:05,Natick,Twilight
-Abigail Truslow,0:21:25,Natick,Newton
+Megan Joyce,0:20:30,Natick,McClennan
+Kailie Rader,0:20:40,Natick,McClennan
+Samantha McMorrow,0:20:40,Natick,McClennan
+Margaret Armstrong,0:20:45,Natick,McClennan
+Erin Wagner,0:21:40,Natick,McClennan
+Lydia Beaudoin,0:21:40,Natick,McClennan
+Abigail Truslow,0:21:50,Natick,McClennan
 Julia Kroon,0:19:57,North Andover,Bay State
 Olive Larosa,0:20:28,North Andover,Bay State
 Elisa Castro,0:21:00,North Andover,Bay State
@@ -117,11 +103,11 @@ Addison Carter,0:21:22,North Andover,Bay State
 Carly Petersen,0:21:45,North Andover,Battle of Border
 Kiera Hegarty,0:22:07,North Andover,Bay State
 Juliana Yankowsky,0:22:15,North Andover,Bay State
-Maddy McGillicuddy,0:19:06,North Quincy,Patriot Leagues
-Ada Cote,0:20:04,North Quincy,Patriot Leagues
-Zoe Nelson,0:20:04,North Quincy,Patriot Leagues
-Joanna Chen,0:20:14,North Quincy,Patriot Leagues
-Caroline Zuffante,0:20:15,North Quincy,Patriot Leagues
+Maddy McGillicuddy,0:19:57,North Quincy,Patriot Leagues
+Ada Cote,0:21:06,North Quincy,Patriot Leagues
+Zoe Nelson,0:20:45,North Quincy,Patriot Leagues
+Joanna Chen,0:20:55,North Quincy,Patriot Leagues
+Caroline Zuffante,0:21:00,North Quincy,Patriot Leagues
 Lelaina Sanchez,0:21:56,North Quincy,Patriot Leagues
 Amelija Slezas,0:22:34,North Quincy,Patriot Leagues
 Lauren Foley,0:20:16,Peabody,Devens
@@ -155,13 +141,20 @@ Samantha Levine,0:20:36,Wellesley,Bay State Conference
 Eloise Crissman,0:20:43,Wellesley,Bay State Conference
 Jolie Chen,0:20:43,Wellesley,Bay State Conference
 Casey Bresnahan,0:20:45,Wellesley,Bay State Conference
-Abigail Hennessy,0:16:43,Westford Academy,Twilight
-Emily Wedlake,0:17:52,Westford Academy,Twilight
-Diya Shrestha,0:18:29,Westford Academy,Twilight
-Phoenix Philbrick,0:19:19,Westford Academy,Dual County Leagues
-Emily Deeks,0:19:24,Westford Academy,Twilight
-Annalise Philpot,0:21:15,Westford Academy,Dual County Leagues
-Grace Hajjar,0:21:32,Westford Academy,Twilight
+Caroline Lanz,0:19:01,Winchester,Winchester
+Riley Newman,0:19:03,Winchester,Winchester
+Julia Ramsey,0:19:12,Winchester,Winchester
+Chloe Chan,0:19:22,Winchester,Winchester
+Michelle Su,0:19:51,Winchester,Winchester
+Millie McDonald,0:19:55,Winchester,Devens
+Abigail Bastien,0:20:15,Winchester,Winchester
+Carla Bosso,0:20:00,Woburn,Woburn
+Zoe Faiano,0:19:59,Woburn,Woburn
+Elina Hunt,0:20:26,Woburn,Woburn
+Molly Loughlin,0:22:08,Woburn,Woburn
+Caitlin Castoldi,0:23:57,Woburn,Bay State
+Alexis Lohnes,0:24:34,Woburn,Winchester
+Maggie Campbell,0:22:52,Woburn,Woburn
 Avery Corriveau,0:24:19,Worcester Technical,North Division
 Michelle Asare,0:26:25,Worcester Technical,North Division
 Paulina Tuluka,0:27:14,Worcester Technical,North Division
