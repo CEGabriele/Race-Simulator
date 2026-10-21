@@ -46,3 +46,21 @@
 .team-cambridge-rindge-and-latin td { background-color: #c7ffe3; }
 .team-brookline td              { background-color: #ffd6e8; }
 .team-newton-south td           { background-color: #d8ffc7; }
+
+body {
+    padding: 1.5rem;
+}
+
+.season {
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    border-top: 3px solid #0d6efd;
+}
+
+.season h2 {
+    margin-bottom: 0.75rem;
+}
+
+.season-2026 {
+    border-top-color: #198754;
+}
