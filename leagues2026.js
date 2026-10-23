@@ -5,7 +5,7 @@ let currentHeader = [];
 let currentData = [];
 const courseDistances = {
     McClennen: 3.1,
-    Winchester: 3.08,
+    Winchester: 3.1,
     Wilmington: 3.1,
     Twilight: 3.06,
     Baystate: 3.1,
