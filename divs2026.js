@@ -39,7 +39,10 @@ const courseDistances = {
     Marshfield:3.1,
     Braintree: 3.1,
     "Needham":3.1,
-    "Keefe Technical": 3.1
+    "Keefe Technical": 3.1,
+    Wrentham: 3.1,
+    "Dual County": 3.1,
+    "Patriot League": 3.1
 
 };
 
